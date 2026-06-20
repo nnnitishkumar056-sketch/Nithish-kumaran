@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my website</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#111;
+    color:bisque;
+}
+
+header{
+    background:#007bff;
+    padding:20px;
+    text-align:center;
+}
+
+.box{
+    padding:50px;
+    text-align:center;
+}
+
+button{
+    padding:15px 30px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:10px;
+}
+
+img{
+    width:500px;
+    height:500px;
+    objrct-fit:cover;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>my first <website></h1>       
+</header>
+
+<div class="box">
+<h2>welocme</h2>
+<p>this is my first website</p>
+
+<img src="{{url_for('static',filename='nithish.png')}}"
+width="300">
+
+<button onclick="window.location.href='/about'">
+    Click me
+</button>
+
+</div>
+
+</body>
+</html>
